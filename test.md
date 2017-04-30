@@ -13,3 +13,7 @@ This site is on GitLab
 Anything above here?!
 
 Testing push after rename
+
+GL: {{ site.git.last_commit.long_sha }}
+
+GH: {{ repository.build_revision }}
