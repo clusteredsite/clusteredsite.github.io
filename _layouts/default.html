@@ -1,3 +1,5 @@
+{% if site.github %}{% assign revision = site.github.build_revision %}{% else %}{% assign revision = site.git.last_commit.long_sha %}{% endif %}
+
 <!DOCTYPE html>
 <html>
 

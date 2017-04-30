@@ -5,18 +5,18 @@
 
   <title>{% if page.title %}{{ page.title | escape }} &endash; {% endif %}{{ site.title | escape }}{% if page.title %} &endash; {{ page.tagline | escape }}{% endif %}</title>
 
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "feed.xml" | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "feed.xml" | prepend: site.url }}?r={{ revision }}">
 
   <meta name="generator" content="Jekyll/{% if site.github %}GitHub{% else %}GitLab{% endif %}">
-  <meta name="revision" content="{{ site.github.build_revision }}{{ site.git.last_commit.long_sha }}">
+  <meta name="revision" content="{{ revision }}">
 
   <!-- Bootstrap core CSS -->
-  <link href="{{ "css/bootstrap.min.css" | prepend: site.assets }}" rel="stylesheet">
+  <link href="{{ "css/bootstrap.min.css" | prepend: site.assets }}?r={{ revision }}" rel="stylesheet">
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <link href="{{ "css/ie10-viewport-bug-workaround.css" | prepend: site.assets }}" rel="stylesheet">
+  <link href="{{ "css/ie10-viewport-bug-workaround.css" | prepend: site.assets }}?r={{ revision }}" rel="stylesheet">
   {% if page.layout == "cover" %}
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <link href="{{ "css/cover.css" | prepend: site.assets }}" rel="stylesheet">
+  <link href="{{ "css/cover.css" | prepend: site.assets }}?r={{ revision }}" rel="stylesheet">
   {% endif %}
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
