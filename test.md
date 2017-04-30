@@ -1,5 +1,5 @@
 ---
-layout: false
+layout: null
 ---
 
 Testing the server serving this.
@@ -10,9 +10,7 @@ This is on GitHub
 This site is on GitLab
 {% endif %}
 
-Anything above here?!
-
-Testing push after rename
+***
 
 GL: {{ site.git.last_commit.long_sha }}
 
