@@ -3,7 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title | escape }} &endash; {% endif %}{{ site.title | escape }}{% if page.title %} &endash; {{ page.tagline | escape }}{% endif %}</title>
+  <title>{% if page.title %}{{ page.title | escape }} &ndash; {% endif %}{{ site.title | escape }}{% if page.tagline %} &ndash; {{ page.tagline | escape }}{% endif %}</title>
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "feed.xml" | prepend: site.url }}?r={{ revision }}">
 
