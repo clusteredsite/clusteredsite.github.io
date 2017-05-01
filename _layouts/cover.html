@@ -13,7 +13,7 @@ layout: default
           <h3 class="masthead-brand"><a href="{{ site.url }}">Clustered Site</a></h3>
           <nav>
             <ul class="nav masthead-nav">
-              <li class="active"><a href="{{ site.url }}">Home</a></li>
+              <li{% if page.url == "/" %} class="active"{% endif %}><a href="{{ site.url }}">Home</a></li>
               <li><a href="https://status.clustered.site/">Status</a></li>
             </ul>
           </nav>
