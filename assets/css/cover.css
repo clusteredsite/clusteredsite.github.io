@@ -28,7 +28,7 @@ html,
 body {
   height: 100%;
   background: #333  url("../images/covers/default.png") no-repeat;
-  background-size: auto;
+  background-size: cover;
 }
 body {
   color: #fff;
